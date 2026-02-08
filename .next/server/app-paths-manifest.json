@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/experience/page": "app/experience/page.js",
+  "/personal-projects/page": "app/personal-projects/page.js",
+  "/personal-projects/deep-learning-suite/page": "app/personal-projects/deep-learning-suite/page.js"
+}

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color: #C6CBD6;
+  background: #0B1020; /* deep navy base so lava colors pop */
+}
+
+body {
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* Soft selection */
+::selection {
+  background: rgba(244, 114, 182, 0.22);
+}
+
+/* Lava blob animation (medium) */
+@keyframes lava {
+  0%   { transform: translate(-12%, -10%) scale(1); }
+  33%  { transform: translate(14%, -6%) scale(1.10); }
+  66%  { transform: translate(-8%, 16%) scale(0.95); }
+  100% { transform: translate(-12%, -10%) scale(1); }
+}
+
+/* Faster motion for small lights */
+@keyframes lavaFast {
+  0%   { transform: translate(-10%, 6%) scale(0.98); }
+  25%  { transform: translate(14%, -10%) scale(1.08); }
+  50%  { transform: translate(-12%, -12%) scale(0.96); }
+  75%  { transform: translate(8%, 14%) scale(1.06); }
+  100% { transform: translate(-10%, 6%) scale(0.98); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50%      { opacity: 0.95; transform: scale(1.05); }
+}
+
+.animate-lava {
+  animation-name: lava;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.animate-lava-fast {
+  animation-name: lavaFast;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.animate-twinkle {
+  animation-name: twinkle;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Organic blob morphing */
+@keyframes blobMorph {
+  0% {
+    border-radius: 42% 58% 63% 37% / 46% 40% 60% 54%;
+  }
+  33% {
+    border-radius: 58% 42% 48% 52% / 55% 63% 37% 45%;
+  }
+  66% {
+    border-radius: 35% 65% 58% 42% / 40% 55% 45% 60%;
+  }
+  100% {
+    border-radius: 42% 58% 63% 37% / 46% 40% 60% 54%;
+  }
+}
+
+.animate-blob {
+  animation: blobMorph 18s ease-in-out infinite;
+}
+
+/* Click bloom (perf): CSS-driven, no per-frame React re-renders */
+@keyframes clickBloom {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.75); filter: blur(18px); }
+  18%  { opacity: 0.85; transform: translate(-50%, -50%) scale(1.0); filter: blur(20px); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.45); filter: blur(24px); }
+}
+
+.animate-click-bloom {
+  animation: clickBloom 950ms ease-out forwards;
+  will-change: transform, opacity, filter;
+}
