@@ -15,16 +15,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/personal-projects/page.js"
-    ],
-    "/personal-projects/deep-learning-suite/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/personal-projects/deep-learning-suite/page.js"
-    ],
-    "/experience/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/experience/page.js"
     ]
   }
 }

@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/linhly/Downloads/vibe-star-portfolio-finalcopy/app/layout\":[\"static/media/558ca1a6aa3cb55e-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/linhly/Downloads/linhly-portfolio/app/layout\":[\"static/media/558ca1a6aa3cb55e-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

@@ -3,6 +3,8 @@ import Link from "next/link"
 import { JetBrains_Mono } from "next/font/google"
 import { CursorStar } from "./components/CursorStar"
 import { LavaBackground } from "./components/LavaBackground"
+import { Footer } from "./components/Footer"
+
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -44,9 +46,7 @@ export default function RootLayout({
           </nav>
         </header>
         {children}
-        <footer className="max-w-5xl mx-auto px-6 py-10 text-xs text-muted">
-          built with next.js · tailwind · click to bloom lights ✨
-        </footer>
+        <Footer />
       </body>
     </html>
   )

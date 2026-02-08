@@ -1,4 +1,4 @@
-// File: /Users/linhly/Downloads/vibe-star-portfolio-finalcopy/app/personal-projects/page.tsx
+// File: /Users/linhly/Downloads/linhly-portfolio/app/personal-projects/page.tsx
 import * as entry from '../../../../app/personal-projects/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
