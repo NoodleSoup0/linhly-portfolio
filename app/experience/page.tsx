@@ -1,5 +1,6 @@
 import Link from "next/link"
 import clsx from "clsx"
+import { ExternalLink as ExternalLinkIcon } from "lucide-react"
 import { CodeLine } from "../components/CodeLine"
 import { SectionTitle } from "../components/SectionTitle"
 import { experience } from "../lib/experience"
@@ -7,14 +8,17 @@ import { experience } from "../lib/experience"
 function LinkBadge({ href, external }: { href: string; external?: boolean }) {
   const base =
     "inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/80 px-2.5 py-1 text-xs font-medium text-slate-800 shadow-sm hover:shadow transition-all hover:text-primary"
-  const icon = <span aria-hidden>↗</span>
+
+  const icon = (
+    <ExternalLinkIcon className="h-3.5 w-3.5 opacity-70" aria-hidden />
+  )
 
   if (external) {
     return (
       <a
         href={href}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         className={base}
         aria-label="Open link in new tab"
       >
@@ -72,38 +76,34 @@ export default function Experience() {
             </div>
           </div>
         ))}
-      <div className="space-y-4">
-  <h3 className="text-lg font-semibold text-slate-200">
-    CS highlights (selected builds)
-  </h3>
 
-  <div className="rounded-2xl border border-black/10 bg-white/80 p-5 shadow-sm space-y-3">
-    <p className="text-sm text-slate-700 leading-relaxed">
-      These projects showcase my computer science and systems work beyond formal roles.
-    </p>
+        {/* CS highlights bridge */}
+        <div className="space-y-4">
+          <h3 className="text-lg font-semibold text-slate-200">
+            CS highlights (selected builds)
+          </h3>
 
-    <ul className="space-y-2 text-sm text-slate-800">
-      <li>
-        // Cloud PDF → NLP pipeline (AWS Lambda, S3, RDS)
-      </li>
-      <li>
-        // Automated GUI testing suite (Selenium, Cucumber, JUnit)
-      </li>
-      <li>
-        // Full-stack donation platform (React, Node.js, Firebase)
-      </li>
-    </ul>
+          <div className="rounded-2xl border border-black/10 bg-white/80 p-5 shadow-sm space-y-3">
+            <p className="text-sm text-slate-700 leading-relaxed">
+              These projects showcase my computer science and systems work beyond
+              formal roles.
+            </p>
 
-    <a
-      href="/personal-projects?track=cs"
-      className="inline-block text-sm font-medium text-primary hover:underline"
-    >
-      View CS projects →
-    </a>
-  </div>
-</div>
+            <ul className="space-y-2 text-sm text-slate-800">
+              <li>// Cloud PDF → NLP pipeline (AWS Lambda, S3, RDS)</li>
+              <li>// Automated GUI testing suite (Selenium, Cucumber, JUnit)</li>
+              <li>// Full-stack donation platform (React, Node.js, Firebase)</li>
+            </ul>
 
-    </div>
+            <Link
+              href="/personal-projects?track=cs"
+              className="inline-block text-sm font-medium text-primary hover:underline"
+            >
+              View CS projects →
+            </Link>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }
