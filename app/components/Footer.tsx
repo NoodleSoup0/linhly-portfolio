@@ -1,3 +1,5 @@
+import { ExternalLink } from "./ExternalLink"
+
 export function Footer() {
   return (
     <footer className="mt-24 pb-10 text-sm text-slate-400">
@@ -14,23 +16,13 @@ export function Footer() {
 
         {/* Right */}
         <div className="flex gap-4 md:justify-end justify-center">
-          <a
-            href="https://github.com/NoodleSoup0"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-slate-200 transition-colors"
-          >
-            GitHub ↗
-          </a>
+          <ExternalLink href="https://github.com/NoodleSoup0">
+            GitHub
+          </ExternalLink>
 
-          <a
-            href="https://www.linkedin.com/in/linh-ly-74a43218a/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-slate-200 transition-colors"
-          >
-            LinkedIn ↗
-          </a>
+          <ExternalLink href="https://www.linkedin.com/in/linh-ly-74a43218a/">
+            LinkedIn
+          </ExternalLink>
 
           <a
             href="mailto:msslinhly@gmail.com"
