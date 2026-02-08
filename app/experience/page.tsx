@@ -84,13 +84,13 @@ export default function Experience() {
 
     <ul className="space-y-2 text-sm text-slate-800">
       <li>
-        • Cloud PDF → NLP pipeline (AWS Lambda, S3, RDS)
+        // Cloud PDF → NLP pipeline (AWS Lambda, S3, RDS)
       </li>
       <li>
-        • Automated GUI testing suite (Selenium, Cucumber, JUnit)
+        // Automated GUI testing suite (Selenium, Cucumber, JUnit)
       </li>
       <li>
-        • Full-stack donation platform (React, Node.js, Firebase)
+        // Full-stack donation platform (React, Node.js, Firebase)
       </li>
     </ul>
 
