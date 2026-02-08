@@ -41,7 +41,7 @@ export const artifacts: Artifact[] = [
       "Built a Java chess application using OO design in an Agile team. Wrote unit/integration tests with JUnit, Mockito, and JaCoCo, integrated CI via GitHub Actions, and used reviews + black/white-box testing to improve maintainability.",
     stack: ["Java", "JUnit", "Mockito", "JaCoCo", "GitHub Actions"],
     track: "cs",
-    linkUrl: "/personal-projects/chess-quality",
+    linkUrl: "https://github.com/NoodleSoup0/chess-java-app",
   },
   {
     title: "Micro:bit Interactive System",
@@ -64,7 +64,7 @@ export const artifacts: Artifact[] = [
     external: true,
   },
   {
-    title: "DTR Lab: UX + Data Pipeline Build",
+    title: "Undergraduate Researcher",
     note: "research → interface → reliable data flow",
     description:
       "Led user research with expert mentors and translated findings into redesigned interface features to improve usability and diagnostic efficiency. Implemented full data pipelines connecting UI components with REST APIs and MongoDB.",
