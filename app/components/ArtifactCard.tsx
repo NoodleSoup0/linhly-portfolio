@@ -27,7 +27,7 @@ function LinkBadge({ href, external }: { href: string; external?: boolean }) {
         className={base}
         aria-label="Open project link in new tab"
       >
-        {icon}
+        ↗
       </a>
     )
   }

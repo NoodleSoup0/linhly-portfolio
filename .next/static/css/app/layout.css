@@ -617,6 +617,9 @@ video {
 .h-10 {
   height: 2.5rem;
 }
+.h-3\.5 {
+  height: 0.875rem;
+}
 .h-4 {
   height: 1rem;
 }
@@ -631,6 +634,9 @@ video {
 }
 .w-10 {
   width: 2.5rem;
+}
+.w-3\.5 {
+  width: 0.875rem;
 }
 .w-4 {
   width: 1rem;
@@ -696,6 +702,9 @@ video {
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-10 {
   gap: 2.5rem;
@@ -980,6 +989,9 @@ video {
 }
 .opacity-100 {
   opacity: 1;
+}
+.opacity-70 {
+  opacity: 0.7;
 }
 .opacity-95 {
   opacity: 0.95;
