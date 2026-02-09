@@ -1,6 +1,6 @@
 # Linh's Portfolio Website
 
-**Live site:** <a href="https://linhly-portfolio.vercel.app" target="_blank" rel="noopener noreferrer">linhly-portfolio.vercel.app</a>
+**Live site:** <a href="https://linhly.vercel.app" target="_blank" rel="noopener noreferrer">linhly.vercel.app</a>
 
 An interactive personal portfolio built with modern web technologies, designed to showcase my computer science and data-focused projects through calm, playful interaction.
 
