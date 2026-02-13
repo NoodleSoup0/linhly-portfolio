@@ -25,6 +25,16 @@ export const artifacts: Artifact[] = [
     external: true,
   },
   {
+    title: "AWS RESTful Web Service",
+    note: "two-tier cloud service with RDS + S3",
+    description:
+      "Designed and implemented a two-tier cloud application introducing an HTTP API layer between clients and AWS services. Built REST-style endpoints with Node.js and Express integrating AWS RDS (MySQL) for relational metadata and Amazon S3 for file storage, including paginated asset retrieval and base64-encoded downloads.",
+    stack: ["Node.js", "Express", "AWS RDS (MySQL)", "Amazon S3", "REST APIs"],
+    track: "cs",
+    linkUrl: "https://github.com/NoodleSoup0/aws-express-rest-api",
+    external: true,
+  },
+  {
     title: "Automated GUI Testing Suite",
     note: "BDD tests that actually survive refactors",
     description:
